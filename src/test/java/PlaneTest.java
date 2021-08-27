@@ -11,13 +11,13 @@ public class PlaneTest {
 
     @Before
     public void setUp(){
-        plane = new Plane(50);
+        plane = new Plane(2500);
 
     }
 
     @Test
     public void hasCapacity(){
-        assertEquals(50, plane.getCapacity());
+        assertEquals(2500, plane.getCapacity());
     }
 
 

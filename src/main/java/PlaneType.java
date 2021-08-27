@@ -1,6 +1,6 @@
 public enum PlaneType {
 
-    BOEING767("Boeing 767", "50", "2000");
+    BOEING767("Boeing 767", "50", "2500");
 
 
     private final String model;
