@@ -1,13 +1,24 @@
-public class Passenger extends Person {
-    private int numOfBags;
+public class Passenger {
+    private final String name;
+    private final int age;
+    private int numberOfBags;
 
 
-    public Passenger(String name, int age, int numOfBags) {
-        super(name, age);
-        this.numOfBags = numOfBags;
+    public Passenger(String name, int age, int numberOfBags) {
+        this.name = name;
+        this.age = age;
+        this.numberOfBags = numberOfBags;
     }
 
-    public int getNumOfBags() {
-        return numOfBags;
+    public int getNumberOfBags(){
+        return numberOfBags;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 }
