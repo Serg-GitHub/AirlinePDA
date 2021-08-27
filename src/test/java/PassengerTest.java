@@ -26,4 +26,22 @@ public class PassengerTest {
         assertEquals("Zsolt Podoba-Szalai", passenger3.getName());
         assertEquals("Sky Su", passenger4.getName());
     }
+
+    @Test
+    public void passengerHasAge(){
+        assertEquals(21, passenger1.getAge());
+        assertEquals(21, passenger2.getAge());
+        assertEquals(21, passenger3.getAge());
+        assertEquals(21, passenger4.getAge());
+    }
+
+    @Test
+    public void passengerHasBags(){
+        assertEquals(2, passenger1.getNumberOfBags());
+        assertEquals(3, passenger2.getNumberOfBags());
+        assertEquals(2, passenger3.getNumberOfBags());
+        assertEquals(4, passenger4.getNumberOfBags());
+    }
+
+
 }

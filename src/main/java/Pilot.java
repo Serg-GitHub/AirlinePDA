@@ -3,13 +3,13 @@ import sun.util.locale.provider.SPILocaleProviderAdapter;
 public class Pilot {
     private final String name;
     private final String rank;
-    private final String pilotLicenseNum;
+    private final String pilotLicenseNumber;
 
 
-    public Pilot(String name, String rank, String pilotLicenseNum) {
+    public Pilot(String name, String rank, String pilotLicenseNumber) {
         this.name = name;
         this.rank = rank;
-        this.pilotLicenseNum = pilotLicenseNum;
+        this.pilotLicenseNumber = pilotLicenseNumber;
     }
 
     public String getName() {
@@ -20,7 +20,7 @@ public class Pilot {
         return rank;
     }
 
-    public String getPilotLicenseNum() {
-        return pilotLicenseNum;
+    public String getPilotLicenseNumber() {
+        return pilotLicenseNumber;
     }
 }
