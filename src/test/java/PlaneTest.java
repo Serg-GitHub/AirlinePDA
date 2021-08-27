@@ -5,20 +5,26 @@ import static org.junit.Assert.assertEquals;
 
 public class PlaneTest {
     Plane plane;
-    CabinCrewType cabinCrewType;
 
 
 
     @Before
     public void setUp(){
-        plane = new Plane(2500);
+        plane = new Plane(250, 10.000);
 
     }
 
     @Test
     public void hasCapacity(){
-        assertEquals(2500, plane.getCapacity());
+        assertEquals(250, plane.getCapacity());
     }
+
+    @Test
+    public void hasWeight(){
+        assertEquals(10.000, plane.getWeight(),0);
+    }
+
+
 
 
 
