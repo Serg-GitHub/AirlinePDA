@@ -1,5 +1,3 @@
-import sun.util.locale.provider.SPILocaleProviderAdapter;
-
 public class Pilot {
     private final String name;
     private final String rank;

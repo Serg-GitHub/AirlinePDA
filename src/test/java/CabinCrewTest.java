@@ -13,10 +13,6 @@ public class CabinCrewTest {
         cabinCrew1 = new CabinCrew("Sergio", "Captain");
         cabinCrew2 = new CabinCrew("Simon", "Co Pilot");
         cabinCrew3 = new CabinCrew("Jakub", "First Officer");
-
-
-
-
     }
 
     @Test

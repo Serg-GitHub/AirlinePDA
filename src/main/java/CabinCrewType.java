@@ -20,9 +20,4 @@ public enum CabinCrewType {
         public String getRank(){
             return this.rank;
         }
-
-
-
-
-
 }

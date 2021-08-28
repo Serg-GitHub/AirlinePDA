@@ -10,7 +10,7 @@ public class PlaneTest {
 
     @Before
     public void setUp(){
-        plane = new Plane(250, 10.000);
+        plane = new Plane(250, 10.000, PlaneType.BOEING767);
 
     }
 
@@ -24,12 +24,8 @@ public class PlaneTest {
         assertEquals(10.000, plane.getWeight(),0);
     }
 
-
-
-
-
-
-
-
-
+    @Test
+    public void hasType(){
+        assertEquals(PlaneType.BOEING767, plane.getType());
+    }
 }
