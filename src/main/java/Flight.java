@@ -9,8 +9,8 @@ public class Flight extends Pilot{
 
     public Flight(Plane plane, String flightNumber, String destination, String departureTime, String departureAirport, Pilot pilot){
         super ("Sergio", "Captain", "CCE50");
-        this.pilot = pilot;
         this.plane = plane;
+        this.pilot = pilot;
         this.flightNumber = flightNumber;
         this.destination = destination;
         this.departureTime = departureTime;

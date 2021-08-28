@@ -17,5 +17,11 @@ public class CabinCrew {
         return rank;
     }
 
+    public String setName(){
+        return name;
+    }
 
+    public String setRank(){
+        return rank;
+    }
 }
