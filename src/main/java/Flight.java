@@ -57,6 +57,6 @@ public class Flight extends Pilot{
         if(plane.getCapacity() <250 ){
             passengers.add(passenger);
     }
-}
+    }
 
 }
