@@ -1,8 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.print.attribute.standard.Destination;
-
 import static org.junit.Assert.assertEquals;
 
 public class FlightTest {
@@ -13,7 +11,7 @@ public class FlightTest {
     @Before
     public void setUp(){
         plane = new Plane(250,10.000,PlaneType.BOEING767);
-        flight = new Flight(plane, "CCDNJ6", "Barbados", "11:55" );
+        flight = new Flight(plane, "BBDFJ6", "BGI", "11:55", "EDI" );
 
 
     }
@@ -24,16 +22,21 @@ public class FlightTest {
     }
     @Test
     public void hasFlightNumber(){
-        assertEquals("CCDNJ6",flight.getFlightNumber());
+        assertEquals("BBDFJ6",flight.getFlightNumber());
     }
 
     @Test
     public void hasDestination(){
-        assertEquals("Barbados", flight.getDestination());
+        assertEquals("BGI", flight.getDestination());
     }
 
     @Test
     public void hasDepartureTime(){
         assertEquals("11:55", flight.getDepartureTime());
+    }
+
+    @Test
+    public void hasDepartureAirport(){
+        assertEquals("EDI", flight.getDepartureAirport());
     }
 }
