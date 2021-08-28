@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Flight extends Pilot{
 
     private Pilot pilot;
@@ -6,6 +8,7 @@ public class Flight extends Pilot{
     private String destination;
     private String departureTime;
     private String departureAirport;
+    private ArrayList<Passenger>passengers;
 
     public Flight(Plane plane, String flightNumber, String destination, String departureTime, String departureAirport, Pilot pilot){
         super ("Sergio", "Captain", "CCE50");
@@ -15,6 +18,7 @@ public class Flight extends Pilot{
         this.destination = destination;
         this.departureTime = departureTime;
         this.departureAirport = departureAirport;
+        this.passengers = new ArrayList<>();
 
     }
 
@@ -39,5 +43,17 @@ public class Flight extends Pilot{
 
     public String getDepartureAirport(){
         return departureAirport;
+    }
+
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public int getNumberOfPassengers(){
+        return passengers.size();
+    }
+
+    public void addPassenger(Passenger passenger){
+        passengers.add(passenger);
     }
 }

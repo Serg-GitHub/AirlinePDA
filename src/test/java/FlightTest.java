@@ -9,6 +9,7 @@ public class FlightTest {
     Plane plane;
     Flight flight;
     Pilot pilot;
+    Passenger passenger;
 
 
     @Before
@@ -16,7 +17,7 @@ public class FlightTest {
         pilot = new Pilot("Sergio", "Captain", "CCE50");
         plane = new Plane(250,10.000,PlaneType.BOEING767);
         flight = new Flight(plane, "BBDFJ6", "BGI", "11:55", "EDI", pilot);
-
+        passenger = new Passenger("John Harper", 21, 2);
 
     }
 
@@ -48,6 +49,12 @@ public class FlightTest {
     public void hasPilot(){
         System.out.println(pilot);
         assertEquals(pilot, flight.getPilot());
+    }
+
+    @Test
+    public void hasPassengers(){
+        flight.addPassenger(passenger);
+        assertEquals(1, flight.getNumberOfPassengers());
     }
 
 }
