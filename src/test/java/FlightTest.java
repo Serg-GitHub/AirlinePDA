@@ -62,4 +62,12 @@ public class FlightTest {
         assertEquals(PlaneType.BOEING767.getCapacity(), 250);
     }
 
+    @Test
+    public void pilotCanFlyPlane(){
+        assertEquals("Good morning everyone! Wishing you all a very pleasant flight from EDI to BGI today", pilot.pilotCanFlyPlane(flight));
+
+    }
+
+
+
 }

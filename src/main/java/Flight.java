@@ -54,6 +54,9 @@ public class Flight extends Pilot{
     }
 
     public void addPassenger(Passenger passenger){
-        passengers.add(passenger);
+        if(plane.getCapacity() <250 ){
+            passengers.add(passenger);
     }
+}
+
 }
